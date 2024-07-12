@@ -26,11 +26,6 @@ This is a multipage responsive web application named **â€œOnline Grocery Store.â
 - You can give a discount on products
 - An accessibility menu is available for users who are color-blind or have other visual impairments
 
-### Some screenshots
-![Alt text](path/to/your/image)
-
-[Include screenshots here]
-
 ## About Database
 
 It uses an SQLite database and contains eight tables: RolesUsers, User, Role, Category, Product, category_product, ShoppingCart, and Orders.
