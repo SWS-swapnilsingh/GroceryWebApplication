@@ -1,0 +1,9 @@
+Progress Report
+
+Orders Made By you In previous Month
+Number of orders = {{no_of_orders}}
+Total Expenditure = {{total_exp}}
+
+{{message}}
+Thanks
+Online Grocery Store
