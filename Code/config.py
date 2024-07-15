@@ -29,3 +29,4 @@ class DevelopmentConfig(Config):
     CACHE_REDIS_HOST = "red-cqa4hnlds78s739m96ag"
     CACHE_REDIS_PORT = 6379
     CACHE_REDIS_DB = 0
+    CACHE_REDIS_URL = "redis://red-cqa4hnlds78s739m96ag:6379/0"
