@@ -5,7 +5,7 @@ export default {
     template: `<div class="m-2">
         <h1><b>All Products</b></h1>
         <p v-if="productList_len == 0"><b style="color: red;">Note: </b>Product list is empty.</p>
-        <div class="row row-cols-2 row-cols-md-4 g-4" v-else>
+        <div class="row row-cols-1 row-cols-md-4 g-4" v-else>
             <AsingleProductCard v-for="(product, index) in productList" :product = "product" />
         </div>
     </div>`,
