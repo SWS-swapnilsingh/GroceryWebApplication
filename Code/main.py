@@ -42,20 +42,20 @@ celery_app = celery_init_app(app)
 
 
 
-@celery_app.on_after_configure.connect
-def send_daily_reminder_email(sender, **kwargs):
-    sender.add_periodic_task(
-        crontab(hour=23, minute=1),
-        daily_reminder.s('narendra@email.com', "We Missed You Today!"),
-    )
+# @celery_app.on_after_configure.connect
+# def send_daily_reminder_email(sender, **kwargs):
+#     sender.add_periodic_task(
+#         crontab(hour=23, minute=1),
+#         daily_reminder.s('narendra@email.com', "We Missed You Today!"),
+#     )
 
 
-@celery_app.on_after_configure.connect
-def send_email(sender, **kwargs):
-    sender.add_periodic_task(
-        crontab(hour=16, minute=18, day_of_month='23'),
-        monthly_reminder.s('narendra@email.com', "Monthly Progress Report"),
-    )
+# @celery_app.on_after_configure.connect
+# def send_email(sender, **kwargs):
+#     sender.add_periodic_task(
+#         crontab(hour=16, minute=18, day_of_month='23'),
+#         monthly_reminder.s('narendra@email.com', "Monthly Progress Report"),
+#     )
 
 if __name__ == '__main__':
     # app.run(debug=True)
